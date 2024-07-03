@@ -2,11 +2,13 @@ import random
 
 
 def minmax(numbers):
-    """
-    ########################################
-    Code Your Program here
-    ########################################
-    """
+    minval = None
+    maxval = None
+    for x in range(len(numbers)):
+        if minval == None or minval > numbers[x]:
+            minval = numbers[x]
+        if maxval == None or maxval < numbers[x]:
+            maxval = numbers[x]
 
     ########################################
     # Do not delete the return statement
